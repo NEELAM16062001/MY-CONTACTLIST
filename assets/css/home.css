@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+#page-head{
+    text-align: center;
+    margin-top: 25;
+    color: darkgray;
+}
+#contact-form{
+    text-align: center;
+    margin-top: 25;
+    color: darkgray;
+    background-color: blue;
+}
+#my-div{
+    text-align: center;
+    margin-top: 25;
+    color: darkgray;
+    background-color: aquamarine;
+}
+#overall{
+    background-color: burlywood;
+    text-align: center;
+    margin-top: 25;
+}

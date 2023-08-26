@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-qfdkjb5BdAXd+Lj+qudLWI+BXq4IuLW5IT+brZEZsLFm++aCMIFIV92гМкРахдрри" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <div id="overall">
+            <h1 id="page-head">
+                <i class="fas fa-address-book"></i>
+                <i class="fas fa-users"></i>
+                MY CONTACTS LIST
+            </h1>
+        <div id="my-div">
+        <ul>
+            <% for(let i of contact_list){ %>
+                <li>
+                    <p><i class="fas fa-user"></i> <%= i.name %> </p>
+                    <p><i class="fas fa-phone"></i> <%= i.phone %></p>
+                </li>
+
+
+          <% } %>
+        </ul>
+        </div>
+
+        
+        <form action="/create-contact" method="post">
+            <div class="input-container">
+                <i class="fas fa-user"></i>
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="input-container">
+                <i class="fas fa-phone"></i>
+                <input type="number" name="phone" placeholder="Number" required>
+            </div>
+            <button type="submit">
+                <i class="fas fa-user-plus"></i> Add Contact
+            </button>
+        </form>
+        </div>
+        
+       <script type="text/javascript" src="/js/home.js"></script> 
+    </body>
+</html>
